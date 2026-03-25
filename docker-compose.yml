@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: backend
+    image: localhost/killrvideo-2025-java
+    ports:
+      - 8443:8443
+    env_file:
+      - ./vars
+  frontend:
+    container_name: frontend
+    image: localhost/killrvideo-react-frontend
+    ports:
+      - 443:443
+    environment:
+      - BACKEND_URL=https://backend:8443
+    depends_on:
+      - backend

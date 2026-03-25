@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 set-env.sh
 HELP.md
@@ -41,3 +42,9 @@ build/
 ### Maven ###
 .mvn
 mvn*
+=======
+.DS_Store
+.env*
+vars
+.vscode
+>>>>>>> 2d8b987 (removing warning from README, adding docker-compose.yml)
